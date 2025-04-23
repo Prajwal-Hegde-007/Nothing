@@ -1,10 +1,6 @@
-import java.util.Scanner;
-
 public class PrimeNumberCheck {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = 29;  // Predefined number to check
         
         boolean isPrime = true;
         for (int i = 2; i <= num / 2; i++) {
@@ -19,6 +15,5 @@ public class PrimeNumberCheck {
         } else {
             System.out.println(num + " is not a prime number.");
         }
-        sc.close();
     }
 }

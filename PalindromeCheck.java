@@ -1,10 +1,6 @@
-import java.util.Scanner;
-
 public class PalindromeCheck {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String input = sc.nextLine();
+        String input = "madam";  // Predefined string to check
         
         String reversed = new StringBuilder(input).reverse().toString();
         
@@ -13,6 +9,5 @@ public class PalindromeCheck {
         } else {
             System.out.println(input + " is not a palindrome.");
         }
-        sc.close();
     }
 }
